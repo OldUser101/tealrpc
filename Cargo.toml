@@ -4,3 +4,12 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+anyhow = "1.0.101"
+clap = { version = "4.5.58", features = ["derive"] }
+discord-presence = { version = "3.2.0", features = ["unstable_name"] }
+jacquard = "0.9.5"
+jacquard-api = { version = "0.9.5", features = ["fm_teal", "streaming"] }
+jacquard-common = { version = "0.9.5", features = ["tokio-tungstenite-wasm", "websocket"] }
+n0-future = "0.3.2"
+owo-colors = "4.2.3"
+tokio = { version = "1.49.0", features = ["macros", "signal"] }
