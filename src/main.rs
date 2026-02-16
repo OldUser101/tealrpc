@@ -163,10 +163,7 @@ async fn _main() -> Result<()> {
     if let Some(status) = status {
         println!("{}: set initial playing status", "info".blue().bold());
         drpc.set_activity(|act| {
-            act.state(format!(
-                    "{}, {}",
-                    status.track_name,
-                    status.artists()))
+            act.state(format!("{}, {}", status.track_name, status.artists()))
                 .activity_type(ActivityType::Listening)
                 .status_display(DisplayType::State)
         })?;
