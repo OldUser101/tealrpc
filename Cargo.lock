@@ -3890,7 +3890,6 @@ dependencies = [
  "discord-presence",
  "jacquard",
  "jacquard-api",
- "jacquard-common",
  "n0-future 0.3.2",
  "owo-colors",
  "tokio",
